@@ -42,7 +42,7 @@ a.logo {
   cursor: pointer;
 }
 
-.logo img {
+.logo_img {
   height: 60px;
 }
 
@@ -87,7 +87,7 @@ a.logo {
   display: none;
 }
 
-.menu-icon {
+.menuicon {
   display: none;
 }
 

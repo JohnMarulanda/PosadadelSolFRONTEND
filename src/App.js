@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 import Login from './components/Login.jsx'
 import Registro from './components/Registro';
@@ -11,11 +11,10 @@ import FotosHotel from './components/FotosHotel';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+
 
         <Inicio />
 
-      <Footer/>
     </div>
   );
 }

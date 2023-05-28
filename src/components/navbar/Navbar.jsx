@@ -15,18 +15,18 @@ const SearchBar = () => {
     <div className={buscar.container}>
       <form
         action="https://www.google.com/search"
-        className={`search ${showSearch ? "show-search" : ""}`}
+        className={` ${showSearch ? "show-search" : ""}`} class={buscar.search}
       >
         <input
           type="search"
           placeholder="Busca..."
           name="q"
-          className="search__input"
+          className={buscar.search__input}
         />
 
         <div className="search__button" onClick={toggleSearch}>
-          <i className="ri-search-2-line search__icon"></i>
-          <i className="ri-close-line search__close"></i>
+          <i className={`ri-search-2-li ${buscar.search__iconne}`}></i>
+          <i className={`ri-close-line ${buscar.search__close}`}></i>
         </div>
       </form>
     </div>
@@ -43,10 +43,11 @@ class Navbar extends Component {
   render() {
     return (
       <nav className={NavBar.NavbarItems}>
-        <a href="" className="logo">
-          <img src={require("../../Images/logoPosada.png")} alt="" />{" "}
+        <a href="" className={buscar.logo}>
+          <img src={require("../../Images/logoPosada.png")} alt="" 
+          className={NavBar.log_img}/>{" "}
         </a>
-        <div className="menu-icon" onClick={this.handleClick}>
+        <div className={NavBar.menuicon} onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
           ></i>
@@ -63,7 +64,7 @@ class Navbar extends Component {
           })}
         </ul>
         <SearchBar />
-        <ul className="button">
+        <ul className={NavBar.button}>
           <Button>
             {" "}
             Entra <i class="fa-solid fa-right-to-bracket"></i>
