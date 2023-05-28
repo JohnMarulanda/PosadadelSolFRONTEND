@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from '../Images/hotel.png'
-
 import Carousel from 'react-bootstrap/Carousel';
+
 
 function UncontrolledExample() {
   return (

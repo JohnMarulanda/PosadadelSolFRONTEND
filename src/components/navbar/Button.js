@@ -1,4 +1,4 @@
-import '../../Styles/Button.css';
+import Boton from '../../Styles/Button.module.css'
 
 const STYLES = [
     'btn--primary',
@@ -22,7 +22,7 @@ export const Button = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick} type={type}>
+        <button className={`${checkButtonStyle} ${checkButtonSize}`} class={Boton.btn}   onClick={onClick} type={type}>
             {children}
         </button>
     )

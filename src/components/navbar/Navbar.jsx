@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react';
-import { MenuItems } from './MenuItems';
-import '../../Styles/Navbar.css';
-import '../../Styles/Buscar.css';
-import { Button } from './Button';
+import React, { Component, useState } from "react";
+import { MenuItems } from "./MenuItems";
+import NavBar from "../../Styles/Navbar.module.css";
+import buscar from '../../Styles/Buscar.module.css'
+import { Button } from "./Button";
 
 const SearchBar = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -12,9 +12,17 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="container">
-      <form action="https://www.google.com/search" className={`search ${showSearch ? 'show-search' : ''}`}>
-        <input type="search" placeholder="Busca..." name="q" className="search__input" />
+    <div className={buscar.container}>
+      <form
+        action="https://www.google.com/search"
+        className={`search ${showSearch ? "show-search" : ""}`}
+      >
+        <input
+          type="search"
+          placeholder="Busca..."
+          name="q"
+          className="search__input"
+        />
 
         <div className="search__button" onClick={toggleSearch}>
           <i className="ri-search-2-line search__icon"></i>
@@ -26,20 +34,24 @@ const SearchBar = () => {
 };
 
 class Navbar extends Component {
-  state = { clicked: false }
+  state = { clicked: false };
 
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
-  }
+    this.setState({ clicked: !this.state.clicked });
+  };
 
   render() {
     return (
-      <nav className='NavbarItems'>
-        <a href="" className='logo'><img src={require('../../Images/logoPosada.png')} alt="" /> </a>
-        <div className='menu-icon' onClick={this.handleClick}>
-          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+      <nav className={NavBar.NavbarItems}>
+        <a href="" className="logo">
+          <img src={require("../../Images/logoPosada.png")} alt="" />{" "}
+        </a>
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i
+            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </div>
-        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
@@ -47,16 +59,18 @@ class Navbar extends Component {
                   {item.title}
                 </a>
               </li>
-            )
+            );
           })}
-
         </ul>
         <SearchBar />
-        <ul className='button'>
-          <Button> Entra <i class="fa-solid fa-right-to-bracket"></i></Button>
+        <ul className="button">
+          <Button>
+            {" "}
+            Entra <i class="fa-solid fa-right-to-bracket"></i>
+          </Button>
         </ul>
       </nav>
-    )
+    );
   }
 }
 
