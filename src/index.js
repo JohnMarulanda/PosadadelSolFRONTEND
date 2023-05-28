@@ -5,6 +5,7 @@ import App from './App';
 //import Login from './components/Login';
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( //aqui se cargan los componentes
   <React.StrictMode> 
