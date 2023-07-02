@@ -11,7 +11,7 @@ function VentanasModales({ children, estado, cambiarEstado }) {
           <Overlay>
             <ContenedorModal>
               <Titulo>
-                <h3>Reserva tu habitación</h3>
+                <h3>Detalles</h3>
               </Titulo>
               <Cerrar onClick={()=> cambiarEstado(!estado)}>
                 <IoClose width="100%" height="100%" />
@@ -44,12 +44,14 @@ const Overlay = styled.div`
 
 const ContenedorModal = styled.div`
   width: 40%;
-  height: 70%;
+  
   background: #fff;
   position: relative;
 
   border-radius: 2rem;
   border: 1px solid #a9659a;
+
+  text-align: left;
 `;
 
 const Titulo = styled.div`
