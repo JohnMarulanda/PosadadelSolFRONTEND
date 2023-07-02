@@ -33,7 +33,7 @@ const HabTriple = () => {
                     </div>
                 </div>
                 <div className="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-                    <h6 className="mb-4" style={{ fontWeight: '600', color: '#A96596' }}>300k por noche</h6>
+                    <h6 className="mb-4" style={{ fontWeight: '600', color: '#A96596' }}>Desde $300.000</h6>
                     {tokenExists && (
                         <a href="" className="btn btn-sm w-100 text-black btn-outline-dark custom-bg shadow-none mb-2">
                             Reservar

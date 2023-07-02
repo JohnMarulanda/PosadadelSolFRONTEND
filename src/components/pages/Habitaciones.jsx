@@ -118,10 +118,8 @@ export const Habitaciones = () => {
                                         <h5 className="mb-3 " style={{ fontWeight: '600', color: '#A96596' }}>
                                             Mirar disponibilidad
                                         </h5>
-                                        <label className="form-label" style={{ fontWeight: '500' }}>Llegada</label>
+                                        <label className="form-label" style={{ fontWeight: '500' }}>Fecha</label>
                                         <input type="date" className="form-control shadow-none mb-3" />
-                                        <label className="form-label" style={{ fontWeight: '500' }}>Salida</label>
-                                        <input type="date" className="form-control shadow-none" />
                                     </div>
                                     <div className="border bg-light p-3 rounded mb-3">
                                         <h5 className="mb-3" style={{ fontWeight: '600', color: '#A96596' }}>
@@ -202,7 +200,7 @@ export const Habitaciones = () => {
                                                 onChange={handleCheckboxChange}
                                             />
                                             <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="sencillaydoble">
-                                                {precioSencilla} - {precioDoble}
+                                                $100.000 - $200.000
                                             </label>
                                         </div>
 
@@ -215,7 +213,7 @@ export const Habitaciones = () => {
                                                 onChange={handleCheckboxChange}
                                             />
                                             <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="tripleyempresarial">
-                                                {precioTriple} - {precioEmpresarial}
+                                                $300.000- $400.000
                                             </label>
                                         </div>
                                         <div className="mb-2">
@@ -227,7 +225,7 @@ export const Habitaciones = () => {
                                                 onChange={handleCheckboxChange}
                                             />
                                             <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="penthouseyempresarial">
-                                                {precioPenth}
+                                                $500.000
                                             </label>
                                         </div>
                                     </div>
