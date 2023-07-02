@@ -132,7 +132,7 @@ const Navbar = () => {
                 <p> <i class="fa-solid fa-cart-shopping"></i> Mis reservaciones</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
-              <Link to="" className="sub-menu-link">
+              <Link to="/Pagos" className="sub-menu-link">
                 <p> <i class="fa-solid fa-credit-card"></i> Método de pago</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>

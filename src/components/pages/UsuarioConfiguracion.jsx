@@ -16,17 +16,17 @@ export const UsuarioConfiguracion = () => {
 
         //Actualizar informacion base de datos
         const userID = getid();
-        data.id = ''+ userID;
-        data.contrasena = '' + userpass; // esto es temporal
+        //data.id = ''+ userID;
+        //data.contrasena = '' + userpass; // esto es temporal
         
-        if (data.nombres == ''){data.nombres = userName}
-        if (data.apellidos == ''){data.apellidos = userLastname}
-        if (data.email == ''){data.email = userEmail}
-        if (data.contrasena == ''){data.contrasena = userpass}
-        
-        try {
-            const response = await axios.put('http://localhost:4000/users/' + userID, data);
+        var auxData = {};
 
+        if (data.nombres != ''){auxData.nombres = data.nombres}
+        if (data.apellidos !=''){auxData.apellidos = data.apellidos}
+        if (data.email != ''){auxData.email = data.email}
+        if (data.contrasena != ''){auxData.contrasena = data.contrasena}
+        try {
+            const response = await axios.put('http://localhost:4000/users/' + userID, auxData);
             if(imageFile){ //solo se vuelve a guardar si se selecciono una imagen
                 //Guardar imagen en firebase
                 await setFile(imageFile, getid());
@@ -75,8 +75,6 @@ export const UsuarioConfiguracion = () => {
     const [userName, setName] = useState(null);
     const [userLastname, setLastname] = useState(null);
     const [userEmail, setEmail] = useState(null);
-    const [userpass, setpass] = useState(null); // esto es temporal
-
 
     useEffect(() => {
         fetchData();
@@ -89,7 +87,7 @@ export const UsuarioConfiguracion = () => {
         setName(response.data[0].nombres);
         setLastname(response.data[0].apellidos);
         setEmail(response.data[0].email);
-        setpass(response.data[0].contrasena);
+
         } catch (error) {
         console.error(error);
         }
@@ -145,7 +143,7 @@ export const UsuarioConfiguracion = () => {
                         <div className='box3-userconfig'>
                             <input className='TextInput2-userConfig'  placeholder={userEmail} {...register('email', {
 
-                            maxLength: 30
+                            maxLength: 50
                         })}></input>
                         </div>
                         <div className='box3-userconfig'>

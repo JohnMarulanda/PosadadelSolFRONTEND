@@ -1,0 +1,73 @@
+.body-pagos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .panel1-pagos {
+    background-color: white;
+    border: 1px solid whitesmoke;
+    width: 70vh;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.2);
+
+    padding-top: 3vmin;
+    
+  }
+
+  .box1-pagos{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box2-pagos{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .box3-pagos{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .inputText-pagos {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.5vmin;
+    width: 61.5vmin;
+    outline: none;
+    margin-left: 1vmin;
+  }
+
+  .inputText2-pagos {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1.5vmin;
+    width: 30vmin;
+    outline: none;
+    margin-left: 1vmin;
+  }
+
+  .inputSubmit1-pagos {
+    border: 1px solid #ccc;
+    background-color: #A96596;
+    border-radius: 5px;
+    padding: 1.5vmin;
+    margin-top: 1.5vmin;
+    width: 30vmin;
+    outline: none;
+    margin-left: 1vmin;
+  }
