@@ -7,6 +7,10 @@ import HabEmpre from './HabitacionesCards/HabEmpre';
 import HabPenth from './HabitacionesCards/HabPenth';
 import Footer from '../Footer';
 import axios from 'axios';
+import VentanasModales from '../VentanasModalesHab';
+import styled from 'styled-components';
+
+
 
 
 
@@ -85,10 +89,14 @@ export const Habitaciones = () => {
         return formattedValue.replace(/,00$/, '');
     };
 
+    const [estado1, cambiarEstado1] = useState(false);   
+
 
     return (
         <div>
 
+            
+            
             <div className='bannerHabServ'>
                 <h1 className='h1-HabServ' >Tipos de Habitaciones </h1>
 
@@ -127,6 +135,7 @@ export const Habitaciones = () => {
                                         <h5 className="mb-3" style={{ fontWeight: '600', color: '#A96596' }}>
                                             Tipo de habitación
                                         </h5>
+
                                         <div className="mb-2">
                                             <input
                                                 type="checkbox"
@@ -282,7 +291,7 @@ export const Habitaciones = () => {
                         )}
                     </div>
 
-
+                                
 
                 </div>
             </div >
@@ -292,8 +301,26 @@ export const Habitaciones = () => {
             </footer>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <VentanasModales 
+                estado={estado1}
+                cambiarEstado={cambiarEstado1}
+            > 
+            <Contenido>
+                <h1>Hola</h1>
+                </Contenido>
+            </VentanasModales>
         </div >
     );
 }
 
 export default Habitaciones;
+
+const Contenido = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+`;

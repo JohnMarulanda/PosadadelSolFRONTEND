@@ -4,6 +4,7 @@ import habitacion2 from "../Images/habitacion2.jpeg";
 import habitacion3 from "../Images/habitacion3.jpg";
 import habitacion4 from "../Images/habitacion4.jpg";
 
+
 function habitaciones(){
     return(
         <div className='principal'>

@@ -88,3 +88,20 @@
 #desc-15, #desc-16, #desc-17, #desc-18, #desc-19{
     font-size: 1.2em;
 }
+
+
+@media (max-width:640px) {
+
+
+    #title-12{
+        color: #a9659a;
+        font-size: 1.6em;
+        margin-left: 2% s;
+    }
+    #desc-15, #desc-16, #desc-17, #desc-18, #desc-19{
+        font-size: 1.2em;
+        margin-left: 2%;
+    }
+
+    
+}
