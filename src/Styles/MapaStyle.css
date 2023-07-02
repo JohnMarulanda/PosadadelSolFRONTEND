@@ -1,4 +1,3 @@
-
 /* ------------------------------------------------------------------------------------- */
 
 /* Divs: cont-7: Ttiene el ttitulo descripcion y boton,
@@ -32,6 +31,7 @@
 #txt-6 {
   font-size: 1.8vi;
   margin-top: 0;
+  font-weight: 500;
 }
 
 #map-1 {

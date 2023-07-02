@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../Styles/panel-admin/PanelAdmin.css';
 import icono from '../../Images/logoPosada.png';
 import Icon from '@mui/material/Icon';
@@ -13,97 +14,101 @@ import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 import WavingHandSharpIcon from '@mui/icons-material/WavingHandSharp';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 
-
-function PanelAdmin(){
-    return(
+function PanelAdmin() {
+    return (
         <div className="contenedor-principal">
             <aside>
                 <div className='top'>
                     <div className="logo">
-                        <img src={icono} alt="logo-posada"/>
+                        <img src={icono} alt="logo-posada" />
                         <h2 className='titulo-top'>Panel <br />Administrador</h2>
                     </div>
                     <div className="close" id='close-btn'>
-                        <CloseSharpIcon/>
+                        <CloseSharpIcon />
                     </div>
                 </div>
                 <div className="sidebar">
-                    <a href="#" className='active'>
-                        <HomeSharpIcon className='iconito'/>
+                    <a href="/Admin" className='active'>
+                        <HomeSharpIcon className='iconito' />
                         <h3>Inicio</h3>
                     </a>
-                    <a href="#">
-                        <BedroomParentSharpIcon className='iconito'/>
+                    <a href="/HabAdmin">
+                        <BedroomParentSharpIcon className='iconito' />
                         <h3>Habitaciones</h3>
                     </a>
-                    <a href="#">
-                        <LocalPhoneSharpIcon className='iconito'/>
+                    <a href="/ServAdmin">
+                        <LocalPhoneSharpIcon className='iconito' />
                         <h3>Servicios</h3>
                     </a>
-                    <a href="#">
-                        <CalendarMonthSharpIcon className='iconito'/>
+                    <a href="/PlansAdmin">
+                        <CalendarMonthSharpIcon className='iconito' />
                         <h3>Planes</h3>
                     </a>
-                    <a href="#">
-                        <EngineeringSharpIcon className='iconito'/>
+                    <a href="/WorkersAdmin">
+                        <EngineeringSharpIcon className='iconito' />
                         <h3>Trabajadores</h3>
                     </a>
-                    <a href="#">
-                        <GroupSharpIcon className='iconito'/>
+                    <a href="/UserAdmin">
+                        <GroupSharpIcon className='iconito' />
                         <h3>Usuarios</h3>
                     </a>
-                    <a href="#">
-                        <BuildCircleSharpIcon className='iconito'/>
-                        <h3>Configuraciones</h3>
+                    <a href="/ContacAdmin">
+                        <BuildCircleSharpIcon className='iconito' />
+                        <h3>Mensajes</h3>
                     </a>
-                    <a href="#">
-                        <LogoutSharpIcon className='iconito'/>
+                    <a href="/Inicio">
+                        <LogoutSharpIcon className='iconito' />
                         <h3>Salir</h3>
                     </a>
-
                 </div>
             </aside>
             <div className='seccion-principal'>
                 <div className="seccion-top">
                     <div className="seccion-top-left">
-                        <h1>Hola <br/>Admin</h1>
-                        <WavingHandSharpIcon sx={{ fontSize: 40 }}/>
+                        <h1>Hola <br />Admin</h1>
+                        <WavingHandSharpIcon sx={{ fontSize: 40 }} />
                     </div>
                     <div className="seccion-top-right">
-                        <AccountCircleSharpIcon sx={{ fontSize: 80 }}/>
+                        <AccountCircleSharpIcon sx={{ fontSize: 80 }} />
                     </div>
                 </div>
                 <div className="seccion-top2">
                     <div>
-                        <h1>750</h1>
-                        <p>Usuarios registrados</p>
+                        <h1></h1>
+                        <p></p>
                     </div>
                     <div>
-                        <h1>750</h1>
-                        <p>Usuarios registrados</p>
+                        <h1></h1>
+                        <p></p>
                     </div>
                     <div>
-                        <h1>750</h1>
-                        <p>Usuarios registrados</p>
+                        <h1></h1>
+                        <p></p>
                     </div>
                 </div>
                 <div className="seccion-datos">
                     <div className="cards">
-                        <h2>Habitaciones mas adquiridas</h2>
+                        <h2></h2>
                     </div>
                     <div className="cards">
-                        <h2>Grafica</h2>
+                        <h2></h2>
                     </div>
                     <div className="cards">
-                        <h2>Servicios mas adquiridos</h2>
+                        <h2></h2>
                     </div>
                     <div className="cards">
-                        <h2>Grafica</h2>
+                        <h2></h2>
+                    </div>
+                    <div className="cards">
+                        <h2></h2>
+                    </div>
+                    <div className="cards">
+                        <h2></h2>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default PanelAdmin
+export default PanelAdmin;

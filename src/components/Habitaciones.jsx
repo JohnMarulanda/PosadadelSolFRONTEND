@@ -4,14 +4,19 @@ import habitacion2 from "../Images/habitacion2.jpeg";
 import habitacion3 from "../Images/habitacion3.jpg";
 import habitacion4 from "../Images/habitacion4.jpg";
 
+<<<<<<< HEAD
 
 function habitaciones(){
     return(
+=======
+function habitaciones() {
+    return (
+>>>>>>> c5cf3c25d6438dfe163854344a8ed0b30f2080d0
         <div className='principal'>
             <div className='cabezal'>
                 <div className='cabezal-izquierda'>
-                    <h1>Nuestras Habitaciones</h1>
-                    <p>Exquisita elegancia en cada rincón. Habitaciones que acarician tus sueños con comodidad y lujo. Descubre un refugio sublime donde el confort y el estilo se entrelazan en armonía. Déjate seducir por la sofisticación de nuestro hotel y disfruta de una experiencia inigualable. ¡Bienvenido a la Posada del Sol!
+                    <h1 className='h1serv'><strong>Nuestras Habitaciones</strong></h1>
+                    <p className='phab'>Exquisita elegancia en cada rincón. Habitaciones que acarician tus sueños con comodidad y lujo. Descubre un refugio sublime donde el confort y el estilo se entrelazan en armonía. Déjate seducir por la sofisticación de nuestro hotel y disfruta de una experiencia inigualable. ¡Bienvenido a la Posada del Sol!
 
                     </p>
                 </div>
@@ -28,10 +33,9 @@ function habitaciones(){
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
                                 <h3 className='sneci-1'>Sencilla</h3>
-                                <p className='sneci'>Habitacion sencilla</p>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$100.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -45,10 +49,9 @@ function habitaciones(){
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
                                 <h3 className='sneci-1'>Triple</h3>
-                                <p className='sneci'>Habitacion Triple</p>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$200.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -62,10 +65,9 @@ function habitaciones(){
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
                                 <h3 className='sneci-1'>Empresarial</h3>
-                                <p className='sneci'>Habitacion Empresaria</p>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$400.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -79,10 +81,9 @@ function habitaciones(){
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
                                 <h3 className='sneci-1'>Penthouse</h3>
-                                <p className='sneci'>Habitacion Penthouse</p>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$500.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>

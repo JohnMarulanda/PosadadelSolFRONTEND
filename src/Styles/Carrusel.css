@@ -1,4 +1,3 @@
-
 /* ------------------------------------------------------------------------------- */
 
 /* Div: cont-9: Contiene el titulo y la descripcion 
@@ -15,10 +14,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-
-  
-
 }
 
 /* ID:  title-8: titulo
@@ -29,10 +24,13 @@
 #title-8 {
   font-size: 2.5vi;
   margin-bottom: 0;
+  color: #883c77;
+  font-weight: 400;
 }
 
 #desc-4 {
-  font-size: 1.8vi;
+  font-size: 1.5vi;
+  font-weight: 500;
 }
 
 #carrusel-0 {
@@ -44,13 +42,12 @@
 #img-1 {
   width: 100%;
   height: 29.5vi;
-  
 }
 
-#img-2{
-    margin: 2%;
-    width: 45%;
-    height: 46%;
+#img-2 {
+  margin: 2%;
+  width: 45%;
+  height: 46%;
 }
 
 #left {
@@ -59,9 +56,6 @@
   width: 27vi;
   border: none;
   height: 100%;
-  
-  
-
 }
 
 #rigth {
@@ -70,13 +64,10 @@
   width: 27vi;
   border: none;
   height: 100%;
-  
-
 }
 
-#png-1{
-   
-    width: 100%;
-    height: 100%;
-    border: none;
+#png-1 {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
