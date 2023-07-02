@@ -4,8 +4,8 @@ import habitacion2 from "../Images/habitacion2.jpeg";
 import habitacion3 from "../Images/habitacion3.jpg";
 import habitacion4 from "../Images/habitacion4.jpg";
 
-function habitaciones(){
-    return(
+function habitaciones() {
+    return (
         <div className='principal'>
             <div className='cabezal'>
                 <div className='cabezal-izquierda'>
@@ -26,11 +26,10 @@ function habitaciones(){
                     <div className='futer'>
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
-                                <h3 className='sneci-1'>Sencilla</h3>
-                                <p className='sneci'>Habitacion sencilla</p>
+                                <h3 className='sneci-1'>Habitación Sencilla</h3>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$100.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -43,11 +42,10 @@ function habitaciones(){
                     <div className='futer'>
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
-                                <h3 className='sneci-1'>Triple</h3>
-                                <p className='sneci'>Habitacion Triple</p>
+                                <h3 className='sneci-1'>Habitación Triple</h3>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$200.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -60,11 +58,10 @@ function habitaciones(){
                     <div className='futer'>
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
-                                <h3 className='sneci-1'>Empresarial</h3>
-                                <p className='sneci'>Habitacion Empresaria</p>
+                                <h3 className='sneci-1'>Habitación Empresarial</h3>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$400.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>
@@ -77,11 +74,10 @@ function habitaciones(){
                     <div className='futer'>
                         <div className='futer-1'>
                             <div className='futer-izquierda'>
-                                <h3 className='sneci-1'>Penthouse</h3>
-                                <p className='sneci'>Habitacion Penthouse</p>
+                                <h3 className='sneci-1'>Habitación Penthouse</h3>
                             </div>
                             <div className='futer-derecha'>
-                                <h3>$ 000</h3>
+                                <h3>$500.000</h3>
                             </div>
                         </div>
                         <div className='padre-boton'>

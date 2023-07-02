@@ -27,6 +27,12 @@ import UsuarioConfiguracion from './components/pages/UsuarioConfiguracion.jsx';
 
 //Panel administrador
 import PanelAdmin from './components/panel-admin/PanelAdmin.jsx';
+import HabAdmin from './components/panel-admin/HabAdmin.jsx';
+import ServAdmin from './components/panel-admin/ServAdmin.jsx';
+import WorkersAdmin from './components/panel-admin/WorkersAdmin.jsx';
+import UserAdmin from './components/panel-admin/UsersAdmin.jsx';
+import PlansAdmin from './components/panel-admin/PlansAdmin.jsx';
+import ContacAdmin from './components/panel-admin/ContacAdmin.jsx';
 
 //Recuperar contraseña
 export const RecoveryContext = createContext();
@@ -58,6 +64,7 @@ function App() {
           <Route path="/Planes" element={<Planes />} />
           <Route path="/Nosotros" element={<Nosotros />} />
           <Route path="/contactanos" element={<Contactanos />} />
+
           <Route path="/Inicia-Sesion" element={<IniciaSesion />} />
           <Route path="/Confirmacion" element={<Confirmacion />} />
           <Route path="/Recuperar" element={<Recuperar />} />
@@ -65,7 +72,16 @@ function App() {
           <Route path="/Recuperar3" element={<Recuperar3 />} />
           <Route path="/Configuracion" element={<UsuarioConfiguracion />} />
           <Route path="/Pagos" element={<Pagos />} />
+
+
           <Route path="/Admin" element={<PanelAdmin />} />
+          <Route path="/HabAdmin" element={<HabAdmin />} />
+          <Route path="/ServAdmin" element={<ServAdmin />} />
+          <Route path="/WorkersAdmin" element={<WorkersAdmin />} />
+          <Route path="/UserAdmin" element={<UserAdmin />} />
+          <Route path="/PlansAdmin" element={<PlansAdmin />} />
+          <Route path="/ContacAdmin" element={<ContacAdmin />} />
+
           <Route path="*" element={<Page404 />} />
         </Routes>
         {/* <Icono /> */}
