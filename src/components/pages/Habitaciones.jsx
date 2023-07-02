@@ -88,6 +88,8 @@ export const Habitaciones = () => {
         <h1 className="h1-HabServ">Tipos de Habitaciones </h1>
       </div>
 
+
+
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-12 mb-lg-0 mb-4 px-0">
