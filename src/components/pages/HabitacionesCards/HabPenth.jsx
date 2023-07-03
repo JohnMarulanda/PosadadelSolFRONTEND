@@ -49,9 +49,9 @@ const HabPenth = ({ handleClick }) => {
                             Reservar
                         </a>
                     )}
-                    <a href="" className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
+                    <button onClick={handleClick} className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
                         Más detalles
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
