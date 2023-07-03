@@ -34,6 +34,8 @@ import UserAdmin from './components/panel-admin/UsersAdmin.jsx';
 import PlansAdmin from './components/panel-admin/PlansAdmin.jsx';
 import ContacAdmin from './components/panel-admin/ContacAdmin.jsx';
 
+import ReservaPage from "./components/pages/ReservaPage.jsx";
+
 //Recuperar contraseña
 export const RecoveryContext = createContext();
 
@@ -80,6 +82,8 @@ function App() {
           <Route path="/UserAdmin" element={<UserAdmin />} />
           <Route path="/PlansAdmin" element={<PlansAdmin />} />
           <Route path="/ContacAdmin" element={<ContacAdmin />} />
+
+          <Route path="/ReservaPage" element={<ReservaPage />} />
 
           <Route path="*" element={<Page404 />} />
         </Routes>

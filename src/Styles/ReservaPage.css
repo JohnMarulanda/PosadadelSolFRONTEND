@@ -1,0 +1,40 @@
+.reserva-container {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-reservaPage {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 150px;
+}
+  
+  .reserva-container h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .reserva-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reserva-container li {
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reserva-container li p {
+    margin: 0;
+  }
+  
+  

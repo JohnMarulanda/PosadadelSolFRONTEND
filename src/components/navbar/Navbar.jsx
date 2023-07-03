@@ -147,7 +147,7 @@ const Navbar = () => {
                 <p> <i class="fa-solid fa-user" ></i>    Mi cuenta</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
-              <Link to="" className="sub-menu-link">
+              <Link to="/ReservaPage" className="sub-menu-link">
                 <p> <i class="fa-solid fa-cart-shopping"></i> Mis reservaciones</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
