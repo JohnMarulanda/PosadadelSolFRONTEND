@@ -1,9 +1,33 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { isLoggedIn } from "../../../hooks/loginToken";
+import { getid } from '../../../hooks/loginToken';
 
 const HabTriple = ({ handleClick }) => {
   const tokenExists = isLoggedIn();
+
+  const handleReservarClick = async() => {
+
+    //Crear la reserva
+    const habitacion = 5;
+    const id = getid();
+    try {
+      const response = await axios.post('http://localhost:4000/reserva', {
+		    id: id,
+		    habitacion_id: habitacion,
+		    plan_id: 1,
+		    servicio_id: 1,
+		    fecha_inicio: "2023-07-02",
+		    fecha_fin: "2023-07-02",
+		    estado: "reservado"
+      });
+      console.log('Response:', response.data);
+      // Aquí puedes realizar otras acciones con la respuesta
+    } catch (error) {
+      console.error('Error:', error);
+      // Aquí puedes manejar el error de alguna manera
+    }
+  };
 
     return (
         <div className="card mb-4 border-0 shadow">
@@ -35,9 +59,9 @@ const HabTriple = ({ handleClick }) => {
                 <div className="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
                     <h6 className="mb-4" style={{ fontWeight: '600', color: '#A96596' }}>Desde $300.000</h6>
                     {tokenExists && (
-                        <a href="" className="btn btn-sm w-100 text-black btn-outline-dark custom-bg shadow-none mb-2">
+                        <button onClick = {handleReservarClick} className="btn btn-sm w-100 text-black btn-outline-dark custom-bg shadow-none mb-2">
                             Reservar
-                        </a>
+                        </button>
                     )}
                     <button onClick={handleClick} className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
                         Más detalles

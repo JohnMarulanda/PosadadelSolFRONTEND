@@ -353,7 +353,7 @@ export const Habitaciones = () => {
           <span>Cuenta con 2 camas y baño </span>
           <span>Tiene una buena vista del paisaje</span>
           <span>
-            Costo por noche: $100.000 sin incluir servicios adicionales
+            Costo por noche: $200.000 sin incluir servicios adicionales
           </span>
           <span>Amplio espacio para descanzar y relajarce</span>
           <span>
