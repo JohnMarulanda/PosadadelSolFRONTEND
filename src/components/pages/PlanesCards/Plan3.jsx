@@ -22,9 +22,7 @@ const Plan3 = () => {
                     </ImagenPlan>
                     <Descripcion>
                         <h2>Descripcion</h2>
-                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam
-                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet.
-                            Soluta ea non sint magni repellendus!</p>
+                        <p className='descripcion-modal'>Imagina un destino paradisíaco donde puedas disfrutar de momentos íntimos y románticos con tu pareja. Este plan de romance en el paraíso está diseñado para crear recuerdos inolvidables y fortalecer la conexión emocional entre ustedes.</p>
                         <BotonAceptar onClick={() => cambiarEstadoModal3(!estadoModal3)}>
                             Aceptar
                         </BotonAceptar>

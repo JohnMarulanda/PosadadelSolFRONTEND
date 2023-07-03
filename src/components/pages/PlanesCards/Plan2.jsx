@@ -22,9 +22,7 @@ const Plan2 = () => {
                     </ImagenPlan>
                     <Descripcion>
                         <h2>Descripcion</h2>
-                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam
-                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet.
-                            Soluta ea non sint magni repellendus!</p>
+                        <p className='descripcion-modal'>Imagina un día lleno de emociones y adrenalina, donde puedas explorar nuevos lugares, probar cosas nuevas y desafiarte a ti mismo. Este plan de aventura está diseñado para aquellos que buscan vivir experiencias emocionantes y salir de su zona de confort.</p>
                         <BotonAceptar onClick={() => cambiarEstadoModal2(!estadoModal2)}>
                             Aceptar
                         </BotonAceptar>
