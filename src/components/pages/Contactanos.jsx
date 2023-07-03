@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect,useState } from 'react';
 import "../../Styles/Contactanos.css";
 import { useForm } from "react-hook-form";
 import axios from 'axios';
@@ -6,7 +6,7 @@ import Footer from '../Footer';
 import ModalMensaje from '../ModalMensaje';
 
 export const Contactanos = () => {
-
+    const [estadoModal1,cambiarEstadoModal1] = useState(false);
     const [option, setOption] = useState(null);
     const handleOptionChange = (selectedOption) => {
         setOption(selectedOption);
@@ -37,7 +37,10 @@ export const Contactanos = () => {
 
         }}>
             <div className='bodyContactenos'>
-                <ModalMensaje></ModalMensaje>
+                <ModalMensaje
+                    estado={estadoModal1}
+                    cambiarEstado={cambiarEstadoModal1}
+                ></ModalMensaje>
                 <div className='bannerContactenos'>
                     <h1 className='h1-contactenos'>¡Contactenos!</h1>
                 </div>
@@ -190,7 +193,9 @@ export const Contactanos = () => {
                                 {errors.mensaje && <span className="p-error-114">Este campo es obligatorio</span>}
                             </div>
                         </div>
-                        <input type="submit" value="Enviar el mensaje" className='input-button-contactenos' />
+                        <input  
+                            type="submit" value="Enviar el mensaje" className='input-button-contactenos'
+                            onClick={() => cambiarEstadoModal1(!estadoModal1)} />
                         <input
                             type="button"
                             value="Borrar todo"
