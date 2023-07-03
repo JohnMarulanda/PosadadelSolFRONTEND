@@ -156,7 +156,7 @@ const Navbar = () => {
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
               <hr />
-              <Link to="" className="sub-menu-link">
+              <Link to="/Contactanos" className="sub-menu-link">
                 <p> <i class="fa-solid fa-life-ring"></i> Soporte</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>

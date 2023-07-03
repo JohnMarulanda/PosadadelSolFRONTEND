@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom'
 import '../../Styles/panel-admin/HabAdmin.css';
 
 const HabAdmin = () => {
@@ -114,6 +115,9 @@ const HabAdmin = () => {
             <h1>Página de Administrador</h1>
 
             <button onClick={() => setModalIsOpen(true)}>Agregar Habitación</button>
+            <Link to="/admin">
+                <button> Volver atrás  </button>
+            </Link>
 
             <Modal
                 isOpen={modalIsOpen}

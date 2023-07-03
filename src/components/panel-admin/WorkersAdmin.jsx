@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from 'react-modal';
 import '../../Styles/panel-admin/HabAdmin.css';
+import { Link } from 'react-router-dom'
 
 
 const WorkersAdmin = () => {
@@ -113,6 +114,9 @@ const WorkersAdmin = () => {
             <h1>Página de Administrador de Empleados</h1>
 
             <button onClick={() => setModalIsOpen(true)}>Agregar Empleado</button>
+            <Link to="/admin">
+                <button> Volver atrás  </button>
+            </Link>
 
             <Modal
                 isOpen={modalIsOpen}

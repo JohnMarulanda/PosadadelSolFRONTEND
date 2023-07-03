@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import axios from 'axios';
 import '../../Styles/panel-admin/HabAdmin.css';
+import { Link } from 'react-router-dom'
 
 const UserAdmin = () => {
     const [users, setUsers] = useState([]);
@@ -103,6 +104,9 @@ const UserAdmin = () => {
         <div>
             <h1>Administrar Usuarios</h1>
             <button onClick={openModal}>Crear Usuario</button>
+            <Link to="/admin">
+                <button> Volver atrás  </button>
+            </Link>
 
             <Modal
                 isOpen={modalIsOpen}
