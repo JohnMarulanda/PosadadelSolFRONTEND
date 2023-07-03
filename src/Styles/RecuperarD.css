@@ -1,0 +1,10 @@
+.cont-diseño{
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid red;
+    width: 50%;
+    border-radius: 2rem;
+    margin-top: 3%
+    ;
+}

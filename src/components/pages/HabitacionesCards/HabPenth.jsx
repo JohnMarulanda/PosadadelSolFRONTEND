@@ -1,21 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { isLoggedIn } from '../../../hooks/loginToken';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { isLoggedIn } from "../../../hooks/loginToken";
 
+const HabPenth = ({ handleClick }) => {
+  const [descripcion, setDescripcion] = useState("");
+  const tokenExists = isLoggedIn();
 
+  // const formatCurrency = (value) => {
+  //     const formattedValue = new Intl.NumberFormat('es-CO', {
+  //         style: 'currency',
+  //         currency: 'COP'
+  //     }).format(value);
 
-const HabPenth = () => {
-    const [descripcion, setDescripcion] = useState('');
-    const tokenExists = isLoggedIn();
-
-    // const formatCurrency = (value) => {
-    //     const formattedValue = new Intl.NumberFormat('es-CO', {
-    //         style: 'currency',
-    //         currency: 'COP'
-    //     }).format(value);
-
-    //     return formattedValue.replace(/,00$/, ''); // Eliminar los dos ceros finales si existen
-    // };
+  //     return formattedValue.replace(/,00$/, ''); // Eliminar los dos ceros finales si existen
+  // };
 
     return (
         <div className="card mb-4 border-0 shadow">
@@ -51,9 +49,9 @@ const HabPenth = () => {
                             Reservar
                         </a>
                     )}
-                    <a href="" className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
+                    <button onClick={handleClick} className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
                         Más detalles
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>

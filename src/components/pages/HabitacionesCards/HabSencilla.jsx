@@ -1,18 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { isLoggedIn } from '../../../hooks/loginToken';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { isLoggedIn } from "../../../hooks/loginToken";
 
-const HabSencilla = () => {
-    const tokenExists = isLoggedIn();
+const HabSencilla = ({ handleClick }) => {
+  const tokenExists = isLoggedIn();
 
-    return (
-        <div className="card mb-4 border-0 shadow">
-            <div className="row g-0 p-3 align-items-center">
-                <div className="col-md-5 mb-lg-0 mb-md-0 mb-3">
-                    <img src={require("../../../Images/habitacion3.jpg")} className="img-fluid rounded" alt="Room" />
-                </div>
-                <div className="col-md-5 px-lg-3 px-md-3 px-0">
-                    <h5 className="mb-3" style={{ fontWeight: '600', color: '#A96596' }}>Tipo de habitación: Sencilla</h5>
+  return (
+    <div className="card mb-4 border-0 shadow">
+      <div className="row g-0 p-3 align-items-center">
+        <div className="col-md-5 mb-lg-0 mb-md-0 mb-3">
+          <img
+            src={require("../../../Images/habitacion3.jpg")}
+            className="img-fluid rounded"
+            alt="Room"
+          />
+        </div>
+        <div className="col-md-5 px-lg-3 px-md-3 px-0">
+          <h5 className="mb-3" style={{ fontWeight: "600", color: "#A96596" }}>
+            Tipo de habitación: Sencilla
+          </h5>
 
                     <div className="features mb-4">
                         <h6 className="mb-1" style={{ fontWeight: '600', color: '#A96596' }}>Descripción</h6>
@@ -40,9 +46,9 @@ const HabSencilla = () => {
                             Reservar
                         </a>
                     )}
-                    <a href="" className="btn btn-sm w-100 btn-outline-dark  custom-bg2 shadow-none">
+                    <button onClick={handleClick} className="btn btn-sm w-100 btn-outline-dark  custom-bg2 shadow-none">
                         Más detalles
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
