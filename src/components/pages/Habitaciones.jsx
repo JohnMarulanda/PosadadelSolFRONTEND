@@ -81,6 +81,10 @@ export const Habitaciones = () => {
   };
 
   const [estado1, cambiarEstado1] = useState(false);
+  const [estado2, cambiarEstado2] = useState(false);
+  const [estado3, cambiarEstado3] = useState(false);
+  const [estado4, cambiarEstado4] = useState(false);
+  const [estado5, cambiarEstado5] = useState(false);
 
   return (
     <div>
@@ -88,141 +92,193 @@ export const Habitaciones = () => {
         <h1 className="h1-HabServ">Tipos de Habitaciones </h1>
       </div>
 
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3 col-md-12 mb-lg-0 mb-4 px-0">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
+              <div className="container-fluid flex-lg-column align-items-stretch">
+                <h4
+                  className="mt-2 "
+                  style={{ fontWeight: "600", color: "#A96596" }}
+                >
+                  Filtros
+                </h4>
+                <button
+                  className="navbar-toggler shadow-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#filterDropdown"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  className="collapse navbar-collapse flex-column align-items-stretch mt-2"
+                  id="filterDropdown"
+                >
+                  <div className="border bg-light p-3 rounded mb-3">
+                    <h5
+                      className="mb-3 "
+                      style={{ fontWeight: "600", color: "#A96596" }}
+                    >
+                      Mirar disponibilidad
+                    </h5>
+                    <label className="form-label" style={{ fontWeight: "500" }}>
+                      Fecha
+                    </label>
+                    <input
+                      type="date"
+                      className="form-control shadow-none mb-3"
+                    />
+                  </div>
+                  <div className="border bg-light p-3 rounded mb-3">
+                    <h5
+                      className="mb-3"
+                      style={{ fontWeight: "600", color: "#A96596" }}
+                    >
+                      Tipo de habitación
+                    </h5>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="sencilla"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.sencilla}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="sencilla"
+                      >
+                        Sencilla
+                      </label>
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="doble"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.doble}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="doble"
+                      >
+                        Doble
+                      </label>
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="triple"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.triple}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="triple"
+                      >
+                        Triple
+                      </label>
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="penthouse"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.penthouse}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="penthouse"
+                      >
+                        Penthouse
+                      </label>
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="empresarial"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.empresarial}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="empresarial"
+                      >
+                        Empresarial
+                      </label>
+                    </div>
+                  </div>
 
+                  <div className="border bg-light p-3 rounded mb-3">
+                    <h5
+                      className="mb-3"
+                      style={{ fontWeight: "600", color: "#A96596" }}
+                    >
+                      Precio
+                    </h5>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="sencillaydoble"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.sencillaydoble}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="sencillaydoble"
+                      >
+                        $100.000 - $200.000
+                      </label>
+                    </div>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-3 col-md-12 mb-lg-0 mb-4 px-0">
-                        <nav className="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
-                            <div className="container-fluid flex-lg-column align-items-stretch">
-                                <h4 className="mt-2 " style={{ fontWeight: '600', color: '#A96596' }}>Filtros</h4>
-                                <button
-                                    className="navbar-toggler shadow-none"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#filterDropdown"
-                                    aria-controls="navbarNav"
-                                    aria-expanded="false"
-                                    aria-label="Toggle navigation"
-                                >
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-                                <div className="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
-                                    <div className="border bg-light p-3 rounded mb-3">
-                                        <h5 className="mb-3 " style={{ fontWeight: '600', color: '#A96596' }}>
-                                            Mirar disponibilidad
-                                        </h5>
-                                        <label className="form-label" style={{ fontWeight: '500' }}>Fecha</label>
-                                        <input type="date" className="form-control shadow-none mb-3" />
-                                    </div>
-                                    <div className="border bg-light p-3 rounded mb-3">
-                                        <h5 className="mb-3" style={{ fontWeight: '600', color: '#A96596' }}>
-                                            Tipo de habitación
-                                        </h5>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="sencilla"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.sencilla}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="sencilla">
-                                                Sencilla
-                                            </label>
-                                        </div>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="doble"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.doble}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="doble">
-                                                Doble
-                                            </label>
-                                        </div>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="triple"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.triple}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="triple">
-                                                Triple
-                                            </label>
-                                        </div>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="penthouse"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.penthouse}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="penthouse">
-                                                Penthouse
-                                            </label>
-                                        </div>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="empresarial"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.empresarial}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="empresarial">
-                                                Empresarial
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div className="border bg-light p-3 rounded mb-3">
-                                        <h5 className="mb-3" style={{ fontWeight: '600', color: '#A96596' }}>
-                                            Precio
-                                        </h5>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="sencillaydoble"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.sencillaydoble}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="sencillaydoble">
-                                                $100.000 - $200.000
-                                            </label>
-                                        </div>
-
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="tripleyempresarial"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.tripleyempresarial}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="tripleyempresarial">
-                                                $300.000- $400.000
-                                            </label>
-                                        </div>
-                                        <div className="mb-2">
-                                            <input
-                                                type="checkbox"
-                                                id="penthouseyempresarial"
-                                                className="form-check-input shadow-none me-1"
-                                                checked={opciones.penthouseyempresarial}
-                                                onChange={handleCheckboxChange}
-                                            />
-                                            <label className="form-check-label" style={{ fontWeight: '500' }} htmlFor="penthouseyempresarial">
-                                                $500.000
-                                            </label>
-                                        </div>
-                                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="tripleyempresarial"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.tripleyempresarial}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="tripleyempresarial"
+                      >
+                        $300.000- $400.000
+                      </label>
+                    </div>
+                    <div className="mb-2">
+                      <input
+                        type="checkbox"
+                        id="penthouseyempresarial"
+                        className="form-check-input shadow-none me-1"
+                        checked={opciones.penthouseyempresarial}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        style={{ fontWeight: "500" }}
+                        htmlFor="penthouseyempresarial"
+                      >
+                        $500.000
+                      </label>
+                    </div>
+                  </div>
 
                   <div className="border bg-light p-3 rounded mb-3">
                     <button
@@ -248,11 +304,11 @@ export const Habitaciones = () => {
               !opciones.tripleyempresarial &&
               !opciones.penthouseyempresarial && (
                 <>
-                  <HabSencilla />
+                  <HabSencilla handleClick={() => cambiarEstado2(!estado2)} />
                   <HabDoble handleClick={() => cambiarEstado1(!estado1)} />
-                  <HabTriple />
-                  <HabEmpre />
-                  <HabPenth />
+                  <HabTriple handleClick={() => cambiarEstado5(!estado5)} />
+                  <HabEmpre handleClick={() => cambiarEstado3(!estado3)} />
+                  <HabPenth handleClick={() => cambiarEstado4(!estado4)} />
                 </>
               )}
             {(opciones.sencilla || opciones.sencillaydoble) && <HabSencilla />}
@@ -285,7 +341,8 @@ export const Habitaciones = () => {
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-      <VentanasModales estado={estado1} cambiarEstado={cambiarEstado1}>
+      {/* ----------------------------------Habitacion doble---------------------------------------------------- */}
+      <VentanasModales estado={estado1} cambiarEstado={cambiarEstado1} titulo="Habitacion doble">
         <Contenido>
           <img
             src={require("../../Images/habitacion2.jpeg")}
@@ -304,11 +361,58 @@ export const Habitaciones = () => {
             mañana y en la tarde, desayuno y servicio de lavanderia
           </span>
           <span>
-            Cargos adicionales: Consumo del minibar, toallas extra, medicinas        
+            Cargos adicionales: Consumo del minibar, toallas extra, medicinas
           </span>
-          <span>cositas</span>
 
-          <img src={require('../../Images/logoPosada.png')} alt="logo" id="logo-2"/>
+          <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+        </Contenido>
+      </VentanasModales>
+
+      {/* ----------------------------------Habitacion sencilla---------------------------------------------------- */}
+      <VentanasModales estado={estado2} cambiarEstado={cambiarEstado2} titulo='Habitacion sencilla'>
+        <Contenido>
+          <img
+            src={require("../../Images/habitacion3.jpg")}
+            className="img-modal1"
+            alt="Room"
+          />
+        </Contenido>
+      </VentanasModales>
+
+      {/* ---------------------------------Habitacion Empresarial---------------------------------------------------- */}
+      <VentanasModales estado={estado3} cambiarEstado={cambiarEstado3} titulo='Habitacion empresarial'>
+        <Contenido>
+          <img
+            src={require("../../Images/habitacion3.jpg")}
+            className="img-modal1"
+            alt="Room"
+          />
+        </Contenido>
+      </VentanasModales>
+
+      {/* ---------------------------------Habitacion Penthouse---------------------------------------------------- */}
+      <VentanasModales estado={estado4} cambiarEstado={cambiarEstado4} titulo='Habitacion penthouse'>
+        <Contenido>
+          <img
+            src={require("../../Images/hotel23.jpg")}
+            className="img-modal1"
+            alt="Room"
+          />
+        </Contenido>
+      </VentanasModales>
+
+      {/* ---------------------------------Habitacion Triple---------------------------------------------------- */}
+      <VentanasModales estado={estado5} cambiarEstado={cambiarEstado5} titulo='Habitacion triple'>
+        <Contenido>
+          <img
+            src={require("../../Images/habitaciontriple.jpg")}
+            className="img-modal1"
+            alt="Room"
+          />
         </Contenido>
       </VentanasModales>
     </div>

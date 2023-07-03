@@ -1,9 +1,11 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
+import "../Styles/habitaciones2.css";
 
 import styled from "styled-components";
+import { Icon } from "@mui/material";
 
-function VentanasModales({ children, estado, cambiarEstado }) {
+function VentanasModales({ children, estado, cambiarEstado, titulo }) {
   return (
     <>
       <div className="habmodal">
@@ -11,10 +13,10 @@ function VentanasModales({ children, estado, cambiarEstado }) {
           <Overlay>
             <ContenedorModal>
               <Titulo>
-                <h3>Detalles</h3>
+                <h3>{titulo}</h3>
               </Titulo>
-              <Cerrar onClick={()=> cambiarEstado(!estado)}>
-                <IoClose width="100%" height="100%" />
+              <Cerrar onClick={() => cambiarEstado(!estado)}>
+                <IoClose id="log-10" />
               </Cerrar>
 
               {children}
@@ -44,7 +46,7 @@ const Overlay = styled.div`
 
 const ContenedorModal = styled.div`
   width: 40%;
-  
+
   background: #fff;
   position: relative;
 
@@ -75,11 +77,12 @@ const Titulo = styled.div`
 
 const Cerrar = styled.button`
   position: absolute;
-  top: 2%;
-  right: 5%;
+
+  top: 0%;
+  right: 4%;
   background: #a9659a;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;

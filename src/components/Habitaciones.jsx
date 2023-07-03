@@ -4,14 +4,8 @@ import habitacion2 from "../Images/habitacion2.jpeg";
 import habitacion3 from "../Images/habitacion3.jpg";
 import habitacion4 from "../Images/habitacion4.jpg";
 
-<<<<<<< HEAD
-
-function habitaciones(){
-    return(
-=======
 function habitaciones() {
     return (
->>>>>>> c5cf3c25d6438dfe163854344a8ed0b30f2080d0
         <div className='principal'>
             <div className='cabezal'>
                 <div className='cabezal-izquierda'>
