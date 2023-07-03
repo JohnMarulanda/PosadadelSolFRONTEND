@@ -32,35 +32,6 @@ function InicioReserva() {
                         </div>
                     </div>
                 </section>
-
-
-                <section className="availability-176">
-                    <form action="" className='form-176'>
-                        <div className="box-176">
-                            <p> Llegada: <span>*</span></p>
-                            <input type="date" className="input-176" />
-                        </div>
-
-                        <div className="box-176">
-                            <p> Salida: <span>*</span></p>
-                            <input type="date" className="input-176" />
-                        </div>
-                        <div className="box-176">
-                            <p> Tipo de habitación: <span>*</span></p>
-                            <select name="child" id="" className="input-176">
-                                <option value="" disabled selected hidden>Elige el tipo de habitación</option>
-                                <option value="1"> Sencilla (Una cama normal, máximo 2 personas).</option>
-                                <option value="2"> Doble (Dos camas normales, máximo 3 personas).</option>
-                                <option value="3"> Triple (Tres camas normales, máximo 6 personas).</option>
-                                <option value="4"> Empresarial (Una cama queen, máximo 3 personas).</option>
-                                <option value="5"> Penthouse (Dos camas queen en el último piso, máximo 5 personas).</option>
-                            </select>
-                        </div>
-                        <input type="submit" value="Verificar" className="veri-btn-13" />
-                    </form>
-                </section>
-
-
             </body>
         </div>
 

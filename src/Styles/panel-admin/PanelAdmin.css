@@ -2,30 +2,39 @@ a:hover {
   color: #a96596;
 }
 
-img {
+.logoposadaad {
   display: block;
   width: 100%;
 }
 
-h1 {
+.h1-admin {
   font-weight: 800;
-  font-size: 1.8rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-}
-
-h3 {
   font-size: 1rem;
 }
 
-h4 {
+.h2-admin {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.h3-admin {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.h4-admin {
+  font-weight: 800;
   font-size: 0.8rem;
 }
 
-small {
-  font-size: 0.75rem;
+.p-admin {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.p-admin2 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .profile-photo {
@@ -221,4 +230,5 @@ aside .sidebar a:hover .iconito {
   height: 200px; /* Ajusta la altura según tus necesidades */
   margin: 15px;
   border-radius: 15px;
+  padding: 50px;
 }

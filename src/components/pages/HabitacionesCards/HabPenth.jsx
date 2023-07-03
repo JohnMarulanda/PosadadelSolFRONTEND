@@ -54,9 +54,6 @@ const HabPenth = () => {
                     <a href="" className="btn btn-sm w-100 btn-outline-dark custom-bg2 shadow-none">
                         Más detalles
                     </a>
-                    <span className="badge rounded-pill bg-light text-dark text-wrap mt-2">
-                        0 habitaciones disponibles
-                    </span>
                 </div>
             </div>
         </div>

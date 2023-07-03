@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../Styles/panel-admin/HabAdmin.css';
+import { Link } from 'react-router-dom'
 
 const ContacAdmin = () => {
     const [mensajes, setMensajes] = useState([]);
@@ -50,6 +51,9 @@ const ContacAdmin = () => {
                 <option value="queja">Queja</option>
                 <option value="sugerencia">Sugerencia</option>
             </select>
+            <Link to="/admin">
+                <button> Volver atrás  </button>
+            </Link>
 
             <table>
                 <thead>
