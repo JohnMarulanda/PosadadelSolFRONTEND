@@ -4,10 +4,10 @@ import Button from "react-bootstrap/Button";
 
 function Mapa() {
   return (
-    
+
     <>
       <div className="cont-7">
-        <p id="title-5">
+        <p id="title-8">
           <strong> Encuentranos</strong>
         </p>
         <p id="txt-6">

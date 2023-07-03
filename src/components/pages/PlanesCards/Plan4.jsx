@@ -6,52 +6,23 @@ import styled from 'styled-components'
 import imagenmodal4 from '../../../Images/Plan4.jpg'
 
 const Plan4 = () => {
-    const [estadoModal4,cambiarEstadoModal4] = useState(false);
-    const [descripcion, setDescripcion] = useState('');
-    const [precio, setPrecio] = useState('');
-    const [tipo_serv, setTipoServ] = useState('');
+    const [estadoModal4, cambiarEstadoModal4] = useState(false);
     const tokenExists = isLoggedIn();
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('http://localhost:4000/servicios');
-                const { data } = response;
-                setDescripcion(data[4].descripcion); // Seleccionar el primer elemento del array y extraer la descripción
-                setPrecio(formatCurrency(data[4].precio));
-                setTipoServ(data[4].tipo_serv);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
-
-    const formatCurrency = (value) => {
-        const formattedValue = new Intl.NumberFormat('es-CO', {
-            style: 'currency',
-            currency: 'COP'
-        }).format(value);
-
-        return formattedValue.replace(/,00$/, ''); // Eliminar los dos ceros finales si existen
-    };
     return (
         <div className="card mb-4 border-0 shadow">
             <ModalPlanes
-                        estado={estadoModal4}
-                        cambiarEstado={cambiarEstadoModal4}
-                        titulo="Relax Total"
+                estado={estadoModal4}
+                cambiarEstado={cambiarEstadoModal4}
+                titulo="Relax Total"
             >
                 <Contenido>
                     <ImagenPlan>
-                        <img src={imagenmodal4} alt="asd" className='imagen-modal'/>
+                        <img src={imagenmodal4} alt="asd" className='imagen-modal' />
                     </ImagenPlan>
                     <Descripcion>
                         <h2>Descripcion</h2>
-                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam 
-                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet. 
+                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam
+                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet.
                             Soluta ea non sint magni repellendus!</p>
                         <BotonAceptar onClick={() => cambiarEstadoModal4(!estadoModal4)}>
                             Aceptar
@@ -73,7 +44,7 @@ const Plan4 = () => {
                     </div>
                 </div>
                 <div className="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-                    <h6 className="mb-4" style={{ fontWeight: '600', color: '#A96596' }}>Precio: {precio} </h6>
+                    <h6 className="mb-4" style={{ fontWeight: '600', color: '#A96596' }}>Desde $70.000</h6>
                     {tokenExists && (
                         <a href="" className="btn btn-sm w-100 text-black btn-outline-dark custom-bg shadow-none mb-2">
                             Adquirir

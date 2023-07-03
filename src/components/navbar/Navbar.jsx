@@ -2,18 +2,25 @@ import React, { Component, useState, useEffect, useRef } from 'react';
 import { MenuItems } from './MenuItems';
 import '../../Styles/navbar/Navbar.css';
 import { Button } from './Button';
-import { Link, NavLink } from 'react-router-dom';
-import { isLoggedIn, logout, getid} from '../../hooks/loginToken';
-import {getFile, setFile} from '../../FirebaseConfig/firebase';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { isLoggedIn, logout, getid } from '../../hooks/loginToken';
+import { getFile, setFile } from '../../FirebaseConfig/firebase';
 import defaultUser from "./../../Images/user.png";
 import axios from 'axios';
 
 const Navbar = () => {
+
+
   const [clicked, setClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [imageUrl, setImageUrl] = useState('');
+  const location = useLocation();
 
   const menuRef = useRef(null);
+
+
+
+
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
@@ -64,22 +71,34 @@ const Navbar = () => {
   //Cargar nombre del usuario en la barra de navegacion
 
   const [userName, setName] = useState(null);
-    
-    useEffect(() => {
-      if(tokenExists){
-        fetchData();
-      }
-    }, []);
 
-    const fetchData = async () => {
-        try {
-        const userID = getid();
-        const response = await axios.get('http://localhost:4000/users/' + userID);
-        setName(response.data[0].nombres + " " + response.data[0].apellidos);
-        } catch (error) {
-        console.error(error);
-        }
-    };
+  useEffect(() => {
+    if (tokenExists) {
+      fetchData();
+    }
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const userID = getid();
+      const response = await axios.get('http://localhost:4000/users/' + userID);
+      setName(response.data[0].nombres + " " + response.data[0].apellidos);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  if (
+    location.pathname === "/admin" ||
+    location.pathname === "/HabAdmin" ||
+    location.pathname === "/ServAdmin" ||
+    location.pathname === "/WorkersAdmin" ||
+    location.pathname === "/UserAdmin" ||
+    location.pathname === "/PlansAdmin" ||
+    location.pathname === "/ContacAdmin"
+  ) {
+    return null; // No mostrar la Navbar en las rutas especificadas
+  }
 
   return (
     <nav className="NavbarItems">
@@ -132,12 +151,12 @@ const Navbar = () => {
                 <p> <i class="fa-solid fa-cart-shopping"></i> Mis reservaciones</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
-              <Link to="" className="sub-menu-link">
+              <Link to="/Pagos" className="sub-menu-link">
                 <p> <i class="fa-solid fa-credit-card"></i> Método de pago</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>
               <hr />
-              <Link to="" className="sub-menu-link">
+              <Link to="/Contactanos" className="sub-menu-link">
                 <p> <i class="fa-solid fa-life-ring"></i> Soporte</p>
                 <span><i class="fa-solid fa-angle-right"></i></span>
               </Link>

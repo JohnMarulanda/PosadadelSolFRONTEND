@@ -1,93 +1,113 @@
-.con{
-    padding: 93px;
+.con {
+  padding: 93px;
 }
 
-
-.bi{
-    border: 1px solid aqua;
-    border-radius: 2px;
-    width: 100px;
-    cursor: pointer;
-    justify-content: center;
-    padding: 13px 15px;
-    text-decoration: none;
-    color: #A96596;
+.bi {
+  border: 1px solid aqua;
+  border-radius: 2px;
+  width: 100px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 13px 15px;
+  text-decoration: none;
+  color: #a96596;
 }
 
-
-.cabeza{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.cabeza {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.afuera{
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
+.afuera {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
 }
 
-.bloque-1{
-    border: 1px solid yellow;
-    border-radius: 22px;
-    background-color: #FFD143;
-    color: black;
-    width: 630px;
-    height: 380px;
-    padding: 20px;
+.bloque-1 {
+  border: 1px solid yellow;
+  border-radius: 22px;
+  background-color: #ffd143;
+  color: black;
+  width: 630px;
+  height: 380px;
+  padding: 20px;
 }
 
-.bloque-1-cabeza{
-    display: flex;
-    justify-content: space-between;
+.bloque-1-cabeza {
+  display: flex;
+  justify-content: space-between;
 }
 
-.bloque-1-1{
-    display: flex;
-    flex-direction: column;
-    width: 90px;
-    height: 90px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
+.bloque-1-1 {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  height: 90px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.bloque-2{
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
-    width: 100%;
-    height: 380px;
+.bloque-2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  width: 100%;
+  height: 380px;
 }
 
-
-.caja-lateral-1{
-    width: 320px;
-    height: 180px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+.caja-lateral-1 {
+  width: 320px;
+  height: 180px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-.imagen{
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
+.imagen {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 
-.desde{
-    text-align: center;
-    font-size: smaller;
+.desde {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: smaller;
+  font-weight: 500;
 }
 
-.price{
-    text-align: center;
-    margin-top: 10px;
+.desde1 {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 1.2vi;
+  font-weight: 500;
+  color: black;
 }
 
-.adicion{
-    margin-top: 10px;
-    font-size: smaller;
+.price {
+  text-align: center;
+  margin-top: 10px;
 }
 
+.adicion {
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+.h1serv {
+  font-size: 2.5vi;
+  margin-bottom: 0;
+  color: #883c77;
+  font-weight: 500;
+}
+
+.descripcion {
+  font-size: 1.5vi;
+  font-weight: 500;
+}

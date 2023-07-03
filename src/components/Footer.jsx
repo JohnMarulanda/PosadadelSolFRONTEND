@@ -3,6 +3,36 @@ import "../Styles/Footer.css";
 import React, { useState } from "react";
 //import {useform} from "react-hook-form"
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+
+
+emailjs.init('jc2KHEe6_bqatSo0Q');
+
+
+    function sendEmail(event) {
+        event.preventDefault();
+        
+  const form = event.target;
+  const userEmail = form.elements.email.value;
+
+  const templateParams = {
+    to_email: userEmail,
+    email:  userEmail
+  };
+
+
+  emailjs.send('service_bz02f69', 'template_l0pjheh', templateParams)
+  .then(function (response) {
+    console.log('Correo electrónico enviado con éxito:', response);
+    alert('Por favor, revisa tu bandeja de Spam para observar el correo si no lo ves en tu bandeja principal.');
+
+  }, function (error) {
+    console.error('Error al enviar el correo electrónico:', error);
+  });
+
+form.reset();
+    }
+
 
 function Footer() {
     return (
@@ -13,10 +43,10 @@ function Footer() {
                 </div>
                 <div className="subscription">
                     <h3>¡Suscribete para recibir ofertas especiales!</h3>
-                    <div className="ofertaContainer">
-                        <input className="inputEmail" placeholder="Tu dirección de email"></input>
-                        <button className="button1" type="submit">Suscribirse</button>
-                    </div>
+                    <form className="ofertaContainer" onSubmit={sendEmail}>
+            <input className="inputEmail" type="email" name="email" placeholder="Tu dirección de email" required />
+            <button className="button1" type="submit">Suscribirse</button>
+          </form>
                 </div>
             </div>
 
