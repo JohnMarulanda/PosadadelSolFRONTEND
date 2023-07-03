@@ -132,7 +132,6 @@ export const Nosotros = () => {
 
       <WorkerMod />
       <Services />
-      <Desarrolladores />
       <Footer />
 
 
