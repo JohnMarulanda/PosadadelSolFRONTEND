@@ -120,21 +120,6 @@ export const Habitaciones = () => {
                 >
                   <div className="border bg-light p-3 rounded mb-3">
                     <h5
-                      className="mb-3 "
-                      style={{ fontWeight: "600", color: "#A96596" }}
-                    >
-                      Mirar disponibilidad
-                    </h5>
-                    <label className="form-label" style={{ fontWeight: "500" }}>
-                      Fecha
-                    </label>
-                    <input
-                      type="date"
-                      className="form-control shadow-none mb-3"
-                    />
-                  </div>
-                  <div className="border bg-light p-3 rounded mb-3">
-                    <h5
                       className="mb-3"
                       style={{ fontWeight: "600", color: "#A96596" }}
                     >
@@ -352,7 +337,7 @@ export const Habitaciones = () => {
 
           <span>Cuenta con 2 camas y baño </span>
           <span>Tiene una buena vista del paisaje</span>
-         
+
           <span>Amplio espacio para descanzar y relajarce</span>
           <span>
             Servicios adicionales incluyen servicio al cuarto, limpieza en la
@@ -384,7 +369,7 @@ export const Habitaciones = () => {
           <span>Tiene buenas vistas de la zona</span>
           <span>Cargos extra: Bebidas del minibar, toallas extra y medicinas.</span>
 
-<img
+          <img
             src={require("../../Images/logoPosada.png")}
             alt="logo"
             id="logo-2"
@@ -406,7 +391,7 @@ export const Habitaciones = () => {
           <span>No tiene cargos extra en el consumo del minibar</span>
           <span>Cuenta con espacio personal de trabajo</span>
 
-<img
+          <img
             src={require("../../Images/logoPosada.png")}
             alt="logo"
             id="logo-2"
@@ -425,9 +410,9 @@ export const Habitaciones = () => {
 
           <span>La mejor habitacion del hotel, cuenta con grandes vistas de paisaje</span>
           <span>Servicios especiales incluidos: Bebidad adicionales, obsequios de accesorios</span>
-              <span>No cuenta con cargos extra</span>
-              <span></span>
-<img
+          <span>No cuenta con cargos extra</span>
+          <span></span>
+          <img
             src={require("../../Images/logoPosada.png")}
             alt="logo"
             id="logo-2"
@@ -449,7 +434,7 @@ export const Habitaciones = () => {
           <span>Cargos extra: consumo del minibar, toallas extra</span>
           <span></span>
 
-<img
+          <img
             src={require("../../Images/logoPosada.png")}
             alt="logo"
             id="logo-2"
