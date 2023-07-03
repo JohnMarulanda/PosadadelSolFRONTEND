@@ -7,6 +7,9 @@ import Lavanderia from './ServiciosCards/Lavanderia';
 import Transporte from './ServiciosCards/Transporte';
 import Footer from '../Footer';
 
+import VentanasModales from '../VentanasModalesHab';
+import styled from 'styled-components';
+
 
 
 export const Servicios = () => {
@@ -36,6 +39,13 @@ export const Servicios = () => {
         const { id, checked } = event.target;
         setOpciones({ ...opciones, [id]: checked });
     };
+
+    const [estado6, cambiarEstado6] = useState(false);
+    const [estado7, cambiarEstado7] = useState(false);
+    const [estado8, cambiarEstado8] = useState(false);
+    const [estado9, cambiarEstado9] = useState(false);
+    const [estado10, cambiarEstado10] = useState(false);
+    const [estado11, cambiarEstado11] = useState(false);
 
     return (
 
@@ -154,12 +164,12 @@ export const Servicios = () => {
                     <div className="col-lg-9 col-md-12 px-4">
                         {todasLasOpcionesDesactivadas && (
                             <>
-                                <Cuarto />
-                                <Transporte />
-                                <Lavanderia />
-                                <Desayuno />
-                                <Almuerzo />
-                                <Cena />
+                                <Cuarto handleClick={() => cambiarEstado11(!estado11)}/>
+                                <Transporte handleClick={() => cambiarEstado8(!estado8)}/>
+                                <Lavanderia handleClick={() => cambiarEstado9(!estado9)}/>
+                                <Desayuno handleClick={() => cambiarEstado10(!estado10)}/>
+                                <Almuerzo handleClick={() => cambiarEstado6(!estado6)}/>
+                                <Cena handleClick={() => cambiarEstado7(!estado7)}/>
                             </>
                         )}
                         {!todasLasOpcionesDesactivadas && opciones.transporte && <Transporte />}
@@ -177,9 +187,151 @@ export const Servicios = () => {
             </footer>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+{/* ---------------------------------------ALMUERZO---------------------------------------------------------------- */}
+            <VentanasModales estado={estado6} cambiarEstado={cambiarEstado6} titulo="Almuerzo">
+        <Contenido>
+          <img
+            src={require("../../Images/almuerzo.jpg")}
+            className="img-modal1"
+            alt="Room"
+          />
+
+          <span>Variedad de opciones gastronómicas: Destaca la amplia variedad de platos y sabores que se ofrecen en el almuerzo. Contando con servicio para todos los gustos.</span>
+          <span>Ingredientes frescos y de calidad: Con convenios con los mejores proveedores de ingredientes siempre tendremos lo mejor para atenderte</span>
+        <span>Menú temático: Puedes pedir las especialidad de la casa para tener una experiencia deliciosa y nunca antes vista.</span>
+        <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+        </Contenido>
+      </VentanasModales>
+
+    {/* ---------------------------------Cena---------------------------------------------------------------------------- */}
+        <VentanasModales estado={estado7} cambiarEstado={cambiarEstado7} titulo="Cena">
+        <Contenido>
+            <img
+            src={require("../../Images/cena.jpg")}
+            className="img-modal1"
+            alt="Room"
+            />
+
+            <span>Experiencia culinaria única: Con el mejor servicio de platos mas sofisticados y de mayor calidad de todos</span>
+            <span>Ambiente elegante y romántico: Puedes compartir con tu pareja la mejr experienca romantica para avivar la llama.</span>
+            <span>Eventos especiales y temáticos: Contamos con shows para hacer de tus noches muy entretenidas</span>
+
+<img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+            </Contenido>
+            </VentanasModales>
+
+    {/* ---------------------------------Transporte---------------------------------------------------------------------------- */}
+        <VentanasModales estado={estado8} cambiarEstado={cambiarEstado8} titulo="Transporte">
+        <Contenido>
+            <img
+            src={require("../../Images/transporte.jpg")}
+            className="img-modal1"
+            alt="Room"
+            />
+
+            <span>Servicio de transporte cómodo y confiable: Contamos con los mejores contactos monitoreados para asegurar tu seguridad y tranquilidad</span>
+            <span>Traslados al aeropuerto: Nuestro servicio puede llevarte y recogerte del aeropuerto para que no tengas que preocuparte por no conocer la zona</span>
+            <span>Horario flexible: Servicio 24 horas puedes hacer uso en cualquier momento.</span>
+            <span>Precios competitivos: Los precios son mas bajos que los tranportes por fuera.</span>
+
+<img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+            </Contenido>
+            </VentanasModales>
+
+    {/* ---------------------------------Lavanderia---------------------------------------------------------------------------- */}
+                            
+        <VentanasModales estado={estado9} cambiarEstado={cambiarEstado9} titulo="Lavanderia">
+        <Contenido>
+            <img
+            src={require("../../Images/lavanderia.jpg")}
+            className="img-modal1"
+            alt="Room"
+            />
+
+            <span>Servicio de lavandería profesional: Para cuidar tus prendas y dejarlas con una fragancia inolvidable</span>
+            <span>Lavado y planchado: Contamos con el servicio de planchado para que luzcas elegante en todo momento</span>
+            <span>Rápido y eficiente: Se especializan en atender tus prendas de la manera mas rapida y eficiente para que tengas que preocuparte.</span>
+            <span>Servicio de lavandería las 24 horas: Puedes pedir que vengan a recoger tu ropa al cuarto en cualquier momento del dia.    </span>
+
+<img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+            </Contenido>
+            </VentanasModales>
+
+    {/* ---------------------------------Desayuno---------------------------------------------------------------------------- */}
+        <VentanasModales estado={estado10} cambiarEstado={cambiarEstado10} titulo="Desayuno">
+        <Contenido>
+            <img
+            src={require("../../Images/desayuno.jpg")}
+            className="img-modal1"
+            alt="Room"
+            />
+
+            <span>Variedad de opciones: Tenemos un amplio menu que ofrecerte para tus mañanas y que tengas undia lleno de energia</span>
+            <span>Desyuno continental: Tenemos variedad de panes, croissants, mermeladas, yogur, cereales, jugos naturales y café recién hecho.</span>
+            <span>Estaciones de cocina en vivo: Para que disfrutes de un entrenido show de muestra de talentosos chef</span>
+            <span>Café y té de calidad: Usando los mejores productos de toda Colombia</span>
+            <span>Horario temprano y extendido: El servicio estara disponible hasta las 11:00 am de la mañana</span>
+
+<img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+            </Contenido>
+            </VentanasModales>
+
+    {/* ---------------------------------Cuarto---------------------------------------------------------------------------- */}
+        <VentanasModales estado={estado11} cambiarEstado={cambiarEstado11} titulo="Servicio al cuarto">
+        <Contenido>
+            <img
+            src={require("../../Images/serviciocuarto.jpeg")}
+            className="img-modal1"
+            alt="Room"
+            />
+
+            <span>Comodidad y conveniencia: Puedes pedir el servicio para que no tengas que dejar de descanzar</span>
+            <span>Amplia variedad de opciones: Puedes elegir cualquier opcion del menu o si necesitas algun servicio especial</span>
+            <span>Servicio las 24 horas: Puedes llamar en cualquier momento para que sientas mayor confort en cualquier momento.</span>
+            <span>Atención personalizada: Los empleados de servicio estan capacitados para brindarte la mejor atencion que puedas merecer.</span>
+
+<img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
+            </Contenido>
+            </VentanasModales>
         </div>
+
+      
+
 
     );
 }
 
 export default Servicios;
+
+
+const Contenido = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

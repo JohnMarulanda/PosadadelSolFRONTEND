@@ -35,11 +35,14 @@ const ContacAdmin = () => {
         const tipo = e.target.value;
         setSelectedTipo(tipo);
         if (tipo === 'todos') {
-            setFilteredMensajes(mensajes);
+            setFilteredMensajes(mensajes); // Utilizar mensajes directamente sin esperar a que se actualice en la función getMensajes
         } else {
             filterMensajesByTipo(tipo);
         }
     };
+
+
+
 
     return (
         <div>
@@ -47,9 +50,9 @@ const ContacAdmin = () => {
             <label>Tipo de Mensaje:</label>
             <select value={selectedTipo} onChange={handleTipoChange}>
                 <option value="todos">Todos</option>
-                <option value="consulta">Consulta</option>
-                <option value="queja">Queja</option>
-                <option value="sugerencia">Sugerencia</option>
+                <option value="consultas">Consultas</option>
+                <option value="quejas">Quejas</option>
+                <option value="sugerencias">Sugerencias</option>
             </select>
             <Link to="/admin">
                 <button> Volver atrás  </button>

@@ -83,7 +83,7 @@ function App() {
 
           <Route path="*" element={<Page404 />} />
         </Routes>
-        {/* <Icono /> */}
+        {/*<Icono />*/}
       </Router>
     </RecoveryContext.Provider>
   );

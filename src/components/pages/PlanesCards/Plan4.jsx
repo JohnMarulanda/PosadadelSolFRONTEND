@@ -21,9 +21,7 @@ const Plan4 = () => {
                     </ImagenPlan>
                     <Descripcion>
                         <h2>Descripcion</h2>
-                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam
-                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet.
-                            Soluta ea non sint magni repellendus!</p>
+                        <p className='descripcion-modal'>Imagina un viaje lleno de descubrimientos culturales, donde puedas sumergirte en la historia, el arte y las tradiciones de un lugar nuevo. Este plan de escapada cultural está diseñado para aquellos que buscan enriquecer su conocimiento y apreciación de diferentes culturas.</p>
                         <BotonAceptar onClick={() => cambiarEstadoModal4(!estadoModal4)}>
                             Aceptar
                         </BotonAceptar>

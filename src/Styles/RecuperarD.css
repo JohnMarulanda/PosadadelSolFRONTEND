@@ -2,9 +2,52 @@
     display: flex;
     flex-direction: column;
 
-    border: 1px solid red;
+    border: none;
     width: 50%;
     border-radius: 2rem;
-    margin-top: 3%
-    ;
+    margin-top: 2%;
+
+    background-color: rgba(255, 226, 4, 0.844);
+}
+
+#txt1{
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#txt2{
+    margin-left: 1%;
+    margin-top: 5%;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#txt3{
+    margin-top: 10%;
+    margin-left: 3%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#txt4{
+    padding: 1rem;
+    margin-left: 3%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+#txt5{
+    padding: 1rem;
+    margin-left: 3%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
 }

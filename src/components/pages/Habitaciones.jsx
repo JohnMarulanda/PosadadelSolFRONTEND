@@ -120,21 +120,6 @@ export const Habitaciones = () => {
                 >
                   <div className="border bg-light p-3 rounded mb-3">
                     <h5
-                      className="mb-3 "
-                      style={{ fontWeight: "600", color: "#A96596" }}
-                    >
-                      Mirar disponibilidad
-                    </h5>
-                    <label className="form-label" style={{ fontWeight: "500" }}>
-                      Fecha
-                    </label>
-                    <input
-                      type="date"
-                      className="form-control shadow-none mb-3"
-                    />
-                  </div>
-                  <div className="border bg-light p-3 rounded mb-3">
-                    <h5
                       className="mb-3"
                       style={{ fontWeight: "600", color: "#A96596" }}
                     >
@@ -380,6 +365,17 @@ export const Habitaciones = () => {
             className="img-modal1"
             alt="Room"
           />
+
+          <span>cuenta con una cama y un baño</span>
+          <span>Cuenta con comodidades pra que descances dela rutina</span>
+          <span>Tiene buenas vistas de la zona</span>
+          <span>Cargos extra: Bebidas del minibar, toallas extra y medicinas.</span>
+
+          <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
         </Contenido>
       </VentanasModales>
 
@@ -390,6 +386,17 @@ export const Habitaciones = () => {
             src={require("../../Images/habitacion3.jpg")}
             className="img-modal1"
             alt="Room"
+          />
+
+          <span>cuenta con el mejor ambiente para descanzar y trabajar</span>
+          <span>Con espacio sufuciente para tu acompañante o pareja</span>
+          <span>No tiene cargos extra en el consumo del minibar</span>
+          <span>Cuenta con espacio personal de trabajo</span>
+
+          <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
           />
         </Contenido>
       </VentanasModales>
@@ -402,6 +409,16 @@ export const Habitaciones = () => {
             className="img-modal1"
             alt="Room"
           />
+
+          <span>La mejor habitacion del hotel, cuenta con grandes vistas de paisaje</span>
+          <span>Servicios especiales incluidos: Bebidad adicionales, obsequios de accesorios</span>
+          <span>No cuenta con cargos extra</span>
+          <span></span>
+          <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
+          />
         </Contenido>
       </VentanasModales>
 
@@ -412,6 +429,17 @@ export const Habitaciones = () => {
             src={require("../../Images/habitaciontriple.jpg")}
             className="img-modal1"
             alt="Room"
+          />
+
+          <span>Cuenta con tres camas amplias, perfectas por si estas en viaje con amigos</span>
+          <span>cuenta con la mejor experiencia en diversion con juegos de mesa y videojuegos</span>
+          <span>Cargos extra: consumo del minibar, toallas extra</span>
+          <span></span>
+
+          <img
+            src={require("../../Images/logoPosada.png")}
+            alt="logo"
+            id="logo-2"
           />
         </Contenido>
       </VentanasModales>

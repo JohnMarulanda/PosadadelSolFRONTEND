@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import "../Styles/habitaciones2.css";
 
 import styled from "styled-components";
-import { Icon } from "@mui/material";
+
 
 function VentanasModales({ children, estado, cambiarEstado, titulo }) {
   return (

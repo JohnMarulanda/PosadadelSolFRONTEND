@@ -23,9 +23,7 @@ const Plan1 = () => {
                     </ImagenPlan>
                     <Descripcion>
                         <h2>Descripcion</h2>
-                        <p className='descripcion-modal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, possimus. Voluptate, dicta. Aliquid totam
-                            fugiat alias nulla dolore praesentium magni tenetur reiciendis maxime amet.
-                            Soluta ea non sint magni repellendus!</p>
+                        <p className='descripcion-modal'>Imagina un día dedicado por completo a tu bienestar y relajación, un momento en el que puedas desconectar del estrés y las preocupaciones cotidianas. Este plan de relax total está diseñado para brindarte un ambiente tranquilo y rejuvenecedor, permitiéndote recargar tus energías y encontrar un equilibrio mental y físico.</p>
                         <BotonAceptar onClick={() => cambiarEstadoModal1(!estadoModal1)}>
                             Aceptar
                         </BotonAceptar>

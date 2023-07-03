@@ -57,6 +57,11 @@ function Recuperar() {
       <RecuperarDesc />
 
       <div className={estilo.cont2}>
+    <div className={estilo.logon1}>
+          <img src={require("../../Images/logoPosada.png")} alt="logo" id={estilo.logo13}/>
+          <span id={estilo.txt5}>La posada del sol</span>
+    </div>
+
         <p className={estilo.text1}>
           <b>¡Recupera tu contraseña!</b>
         </p>
