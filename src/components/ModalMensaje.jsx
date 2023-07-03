@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const ModalMensaje  = ({estado,cambiarEstado}) => {
     return (
@@ -10,6 +11,18 @@ const ModalMensaje  = ({estado,cambiarEstado}) => {
                     <BotonCerrar onClick={() => cambiarEstado(false)}>
                         X
                     </BotonCerrar>
+                    <TituloModal>
+                        Gracias por contactarnos!
+                    </TituloModal>
+                    <MensajeModal>
+                        Tu mensaje fue enviado exitosamente
+                    </MensajeModal>
+                    <UltimoMensaje>
+                        Pronto recibiras tu respuesta
+                    </UltimoMensaje>
+                    <IconoModal>
+                        <CheckCircleIcon/>
+                    </IconoModal>
                 </ContenedorModal>
             </Overlay>
             }  
@@ -65,4 +78,27 @@ const BotonCerrar = styled.button`
         color: #FFFF4C;
     }
     
+`;
+
+const TituloModal = styled.h1`
+    margin-top: 150px;
+    min-height: 100px;
+    color: #8B2E57;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+`;
+
+const MensajeModal = styled.h2`
+    color: #A96596;
+`;
+
+const IconoModal = styled.button`
+    color: #8B2E57;
+    background: white;
+    position: absolute;
+`;
+
+const UltimoMensaje = styled.h3`
+    color: #A96596;
 `;
